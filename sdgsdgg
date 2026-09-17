@@ -1,5 +1,5 @@
 Cashier: ***grab real ticket times from an api*** 
-Create ticket orders for food,
+<!-- Create ticket orders for food, No foods. it would be to much  -->
 Delete mistakes in orders, 
 See the seats that are taken, 
 update the seats that were bought. 
@@ -7,7 +7,6 @@ update the seats that were bought.
 list and dict: 
 Dict = rows and seat numbers
 List = Food in 
-
 
 For Code part:
 * Functions — at least 4 meaningful functions
