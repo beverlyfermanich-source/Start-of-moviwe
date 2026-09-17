@@ -1,6 +1,6 @@
-foods = {
-    "pizza", "popcorn", "Candy", "Nachos", "Pretezel", "Chicken Tenders", "Fries"
-}
+foods = [
+    "pizza", "popcorn", "Candy", "Nachos", "Pretezel", "Chicken Tenders", "Fries"]
+price_food = [13.48, 12.48, 10.48, 10.98, 19.48, 13.48, 9.48]
 seats = {
     "Row A": [1, 2, 3, 4, 5, 6, 7, 8, 9],
     "Row B": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
@@ -18,4 +18,4 @@ seats = {
 }
 
 
-print(seats["Row B"])
+print(price_food)
