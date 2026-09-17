@@ -1,1 +1,27 @@
+Cashier: ***grab real ticket times from an api*** 
+Create ticket orders for food,
+Delete mistakes in orders, 
+See the seats that are taken, 
+update the seats that were bought. 
 
+list and dict: 
+Dict = rows and seat numbers
+List = Food in 
+
+
+For Code part:
+* Functions — at least 4 meaningful functions
+    * the 4 functions will be CRUD (and probably below it for the information)
+* Loops — process dictionary/list data
+    * that will be used for the different options
+* Conditionals — make decisions
+* User input — interactive program
+    * not quite sure how to do it but ill figure it out later
+* One useful calculation + one error case
+    * Calculations will be used with the totals 
+
+CRUD def (is up in description):
+Create (.append / .add): Adds a brand new piece of data to a collection or database.
+Read (.get / .find): Retrieves or views existing data without changing it.
+Update (.edit / .modify): Changes data that already exists.
+Delete (.remove / .destroy): Removes data from the system
