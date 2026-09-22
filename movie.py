@@ -1,21 +1,24 @@
 # foods = [
 #     "pizza", "popcorn", "Candy", "Nachos", "Pretezel", "Chicken Tenders", "Fries"]
 # price_food = [13.48, 12.48, 10.48, 10.98, 19.48, 13.48, 9.48]
-seats = [
-    "Row A", [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    "Row B", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "Row C", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "Row D", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    "Row E", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "Row F", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "Row G", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "Row H", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "Row I", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "Row J", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "Row K", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "Row L", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    "Row M", [4, 5, 6, 7, 8, 9, 10, 11, 12],
-]
+seats = {
+    "Row A": range(1, 10),
+    "Row B": range(1, 12),
+    "Row C": range(1, 13),
+    "Row D": range(1, 11),
+    "Row E": range(1, 13),
+    "Row F": range(1, 12),
+    "Row G": range(1, 13),
+    "Row H": range(1, 12),
+    "Row I": range(1, 13),
+    "Row J": range(1, 12),
+    "Row K": range(1, 13),
+    "Row L": range(1, 12),
+    "Row M": range(4, 13),
+}
+
+for row, seat_numbers in seats.items():
+    print(row, list(seat_numbers))
 Theater_number = [
 
 ]
