@@ -16,12 +16,18 @@ seats = {
     "Row L": range(1, 12),
     "Row M": range(4, 13),
 }
+# Had Chat gpt to simplfy the seats using range. (range is the numbers inbetween 1 and whatever the ending numner is)
+# for row, seat_numbers in seats.items():
+#     print(row, list(seat_numbers))
+ShowRooms = {
+    "Show Room 1": "Movie 1",
+    "Show Room 2": "Movie 2",
+    "Show Room 3": "Movie 3",
+    "Show Room 4": "Movie 4",
+    "Show Room 5": "Movie 1",
+}
 
-for row, seat_numbers in seats.items():
-    print(row, list(seat_numbers))
-Theater_number = [
-
-]
+print(Theater_number)
 def show_movies():
     pass
 
