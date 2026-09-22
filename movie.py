@@ -27,9 +27,10 @@ ShowRooms = {
     "Show Room 5": "Movie 1",
 }
 
-print(Theater_number)
 def show_movies():
-    pass
+    print("Avalible Movies")
+    print(ShowRooms)
+    
 
 def seats_avalible():
     pass

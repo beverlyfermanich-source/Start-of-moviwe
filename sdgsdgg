@@ -24,3 +24,6 @@ Create (.append / .add): Adds a brand new piece of data to a collection or datab
 Read (.get / .find): Retrieves or views existing data without changing it.
 Update (.edit / .modify): Changes data that already exists.
 Delete (.remove / .destroy): Removes data from the system
+
+
+GET AN API OF DIFFERENT MOVIES TO GET THE ABSTRACT OF THE MOVIE 
