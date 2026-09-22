@@ -26,6 +26,7 @@ ShowRooms = {
     "Show Room 4": "Movie 4",
     "Show Room 5": "Movie 1",
 }
+unavalible = []
 
 def show_movies():
     print("Avalible Movies")
@@ -33,6 +34,12 @@ def show_movies():
         print(room, "->", movie)
 # show_movies()
 
+def pickseats():
+    row = input("What row?")
+    if input == rows in seats:
+        
+    # prints all rows user chooses one after user chooses one then they choose number
+    seat = input(int("What number?"))
 def seats_avalible():
     pass
 
