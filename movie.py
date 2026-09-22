@@ -29,8 +29,9 @@ ShowRooms = {
 
 def show_movies():
     print("Avalible Movies")
-    print(ShowRooms)
-    
+    for room, movie in ShowRooms.items():
+        print(room, "->", movie)
+# show_movies()
 
 def seats_avalible():
     pass
