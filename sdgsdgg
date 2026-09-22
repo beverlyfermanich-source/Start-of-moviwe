@@ -27,3 +27,12 @@ Delete (.remove / .destroy): Removes data from the system
 
 
 GET AN API OF DIFFERENT MOVIES TO GET THE ABSTRACT OF THE MOVIE 
+
+Notes during work time:
+<!-- # def seats_avalible():
+#     pass
+
+# def seats_unavalible(): all of the avalible and unavalible are in the pickseats section. 
+    pass
+
+# def payment(): (Consider this a challange to do) -->

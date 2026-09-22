@@ -1,6 +1,3 @@
-# foods = [
-#     "pizza", "popcorn", "Candy", "Nachos", "Pretezel", "Chicken Tenders", "Fries"]
-# price_food = [13.48, 12.48, 10.48, 10.98, 19.48, 13.48, 9.48]
 seats = {
     "A":[1, 2, 3, 4, 5],
     "B": [1, 2, 3, 4, 5],
@@ -17,9 +14,6 @@ seats = {
     "M": [1, 2, 3, 4, 5],
 }
 
-# Had Chat gpt to simplfy the seats using range. (range is the numbers inbetween 1 and whatever the ending numner is)
-# for row, seat_numbers in seats.items():
-#     print(row, list(seat_numbers))
 ShowRooms = {
     "Show Room 1": "Movie 1",
     "Show Room 2": "Movie 2",
@@ -30,20 +24,13 @@ ShowRooms = {
 unavalible = []
 
 def show_movies():
-    print("Avalible Movies")
+    print("Avalible Movies:")
     for room, movie in ShowRooms.items():
-        print(room, "->", movie)
-# show_movies()
-
+        print(movie)
+    choice_movie = input("What Movie?")
+# show_movies() come back and make it go to pick seats when a movie is chosen.
 def pickseats():
 
-    print("Here are the Available rows:", list(seats))
-    row = input("What Row?").upper() #upper helps with case inputs
-
-    if row in seats:
-
-        def pickseats():
-    # 1. Show available rows and get row choice
     print("Available rows:", list(seats.keys()))
     chosen_row = input("What row? ").upper() # .upper() handles lowercase inputs like 'a'
     
@@ -60,7 +47,17 @@ def pickseats():
             
     else:
         print("Invalid row. Please choose a row from the list.")
-    #     print(f"Avalible seats in {row}: {seats[row]}")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #   print(f"Avalible seats in {row}: {seats[row]}")
     # chosen_seat = int(input("What number?"))
 
     # if chosen_seat in seats[row]:
@@ -71,11 +68,3 @@ def pickseats():
     # # prints all rows user chooses one after user chooses one then they choose number
     # seat = input(int("What number?"))
 # pickseats()
-def seats_avalible():
-    pass
-
-def seats_unavalible():
-    pass
-
-# def payment(): (Consider this a challange to do)
-
