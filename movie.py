@@ -16,6 +16,17 @@ seats = [
     "Row L", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "Row M", [4, 5, 6, 7, 8, 9, 10, 11, 12],
 ]
+Theater_number = [
 
+]
+def show_movies():
+    pass
 
-print(seats)
+def seats_avalible():
+    pass
+
+def seats_unavalible():
+    pass
+
+# def payment(): (Consider this a challange to do)
+
