@@ -14,45 +14,48 @@ seats = {
     "M": [1, 2, 3, 4, 5],
     }
 ShowRooms = {
-    "Show Room 1": "Movie 1",
-    "Show Room 2": "Movie 2",
-    "Show Room 3": "Movie 3",
-    "Show Room 4": "Movie 4",
-    "Show Room 5": "Movie 1",
+    "1": "Name Movie (1)",
+    "2": "Name Movie (2)",
+    "3": "Name Movie (3)",
+    "4": "Name Movie (4)",
+    "5": "Name Movie (5)",
 }# show_movies() come back and make it go to pick seats when a movie is chosen.
 def movie_spots():
     print("See list of Movies (1) \nChoose Movie and Spots (2) \nCheck out (3)")
-    int(input("What First?"))
-    if input == 1:
-        print(movie_list)
+    choice = int(input("What First? "))
+    if choice == 1:
+        return movie_list()  
+    elif choice == 2:
+        return pickseats() 
+
 def movie_list():
-        print("Hello")
-def show_movies():
+    print("Hello")
+
+def pickseats():
         print("Avalible Movies:")
         for room, movie in ShowRooms.items():
             print(movie)
-        choice_movie = input("What Movie?")
+        choice_movie = int(input("What Movie?"))
+        if choice_movie == ShowRooms:
+            print("Available rows:", list(seats.keys()))
+            chosen_row = input("What row? ").upper() # .upper() handles lowercase inputs like 'a'
+            while True:
+                if chosen_row in seats:
+                    print(f"Available seats in Row {chosen_row}: {seats[chosen_row]}")
+                    
+                    chosen_seat = int(input("What number? "))
+                    
+                    if chosen_seat in seats[chosen_row]:
+                        print(f"Success! You are in Show room {choice_movie} in row {chosen_row}, Seat {chosen_seat}.")
+                        seats[chosen_row].remove(chosen_seat) 
+                        break
+                    else:
+                        print("Invalid seat number. That seat doesn't exist or is taken.")
 
-def pickseats():
-        print("Available rows:", list(seats.keys()))
-        chosen_row = input("What row? ").upper() # .upper() handles lowercase inputs like 'a'
-        while True:
-            if chosen_row in seats:
-                print(f"Available seats in Row {chosen_row}: {seats[chosen_row]}")
-                
-                chosen_seat = int(input("What number? "))
-                
-                if chosen_seat in seats[chosen_row]:
-                    print(f"Success! You booked Row {chosen_row}, Seat {chosen_seat}.")
-                    seats[chosen_row].remove(chosen_seat) 
-                    break
                 else:
-                    print("Invalid seat number. That seat doesn't exist or is taken.")
+                    print("Invalid row. Please choose a row from the list.")
+                    return pickseats()
+        else:
+            print("Please Choose a Movie")
+movie_spots()
 
-            else:
-                print("Invalid row. Please choose a row from the list.")
-                return pickseats()
-# movie_spots()
-# movie_list()
-pickseats()
-# show_movies()
