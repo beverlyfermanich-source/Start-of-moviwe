@@ -36,21 +36,22 @@ def show_movies():
 def pickseats():
         print("Available rows:", list(seats.keys()))
         chosen_row = input("What row? ").upper() # .upper() handles lowercase inputs like 'a'
-        
-        if chosen_row in seats:
-            print(f"Available seats in Row {chosen_row}: {seats[chosen_row]}")
-            
-            chosen_seat = int(input("What number? "))
-            
-            if chosen_seat in seats[chosen_row]:
-                print(f"Success! You booked Row {chosen_row}, Seat {chosen_seat}.")
-                seats[chosen_row].remove(chosen_seat) 
-            # else:
-                return ("Invalid seat number. That seat doesn't exist or is taken.")
+        while True:
+            if chosen_row in seats:
+                print(f"Available seats in Row {chosen_row}: {seats[chosen_row]}")
                 
-        else:
-            print("Invalid row. Please choose a row from the list.")
-            return pickseats()
+                chosen_seat = int(input("What number? "))
+                
+                if chosen_seat in seats[chosen_row]:
+                    print(f"Success! You booked Row {chosen_row}, Seat {chosen_seat}.")
+                    seats[chosen_row].remove(chosen_seat) 
+                    break
+                else:
+                    print("Invalid seat number. That seat doesn't exist or is taken.")
+
+            else:
+                print("Invalid row. Please choose a row from the list.")
+                return pickseats()
 # movie_spots()
 # movie_list()
 pickseats()
