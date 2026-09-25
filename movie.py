@@ -29,14 +29,25 @@ def movie_spots():
         return pickseats() 
 
 def movie_list():
-    print("Hello")
-
+    print("Available Movies:")
+    for room, movie in ShowRooms.items():
+        # Print the room number so the user knows what to type
+        print(f"{room}: {movie}")
+        
+    choice_movie = input("What Movie Number? ")
+    
+    # Check if the number entered is a valid key in the dictionary
+    if choice_movie in ShowRooms:
+        return pickseats()
+    else:
+        print("Please Choose a Valid Movie")
+        return movie_list()
 def pickseats():
-        print("Avalible Movies:")
-        for room, movie in ShowRooms.items():
-            print(movie)
-        choice_movie = int(input("What Movie?"))
-        if choice_movie == ShowRooms:
+        # print("Avalible Movies:")
+        # for room, movie in ShowRooms.items():
+        #     print(movie)
+        # choice_movie = int(input("What Movie?"))
+        # if choice_movie == ShowRooms:
             print("Available rows:", list(seats.keys()))
             chosen_row = input("What row? ").upper() # .upper() handles lowercase inputs like 'a'
             while True:
@@ -55,7 +66,7 @@ def pickseats():
                 else:
                     print("Invalid row. Please choose a row from the list.")
                     return pickseats()
-        else:
-            print("Please Choose a Movie")
+        # else:
+        #     print("Please Choose a Movie")
 movie_spots()
 
