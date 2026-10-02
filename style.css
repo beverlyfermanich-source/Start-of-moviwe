@@ -1,0 +1,54 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #7A223A
+;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: #B52A4F
+;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+}
+button {
+    padding: 10px;
+    width: 60%;
+    background: black;
+    color: #E3CCFB;
+    border: none;
+}
+.error {
+    color: red;
+}
+
+.scrollableAreaContainer {
+  width: 300px;
+  height: 400px;
+
+  overflow: auto;
+}
+
+.scrollableItems {
+  padding: 0;
+}
+
+.scrollableItems li {
+  background-color: #EEE;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  list-style-type: none;
+}
