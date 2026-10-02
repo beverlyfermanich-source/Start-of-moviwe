@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 style="color:#FEF960;">Login</h1>
+<form method="POST">
+  <input style="background-color:#E3CCFB;" name="username" placeholder="Username"><br>
+  <input style="background-color:#E3CCFB;" name="password" type="password" placeholder="Password"><br>
+  <button type="submit">Login</button>
+</form>
+<a href="/register">Register</a>
+<p class="error">{{ error }}</p>
+{% endblock %}
